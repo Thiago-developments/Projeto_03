@@ -18,7 +18,7 @@
     <body>
         <h1>Remoção de Empresas</h1>
         <a href="Pagina_cadastro_empresa.jsp"><button>Voltar</button></a>
-        <% if(request.getParameter("removerContato") != null){
+        <% if(request.getParameter("remover_cadastro") != null){
                 Db.getDadosEm().remove(i);
                 response.sendRedirect("Pagina_cadastro_empresa.jsp");
         }
@@ -31,7 +31,7 @@
             Cnpj: <%= e.getCnpj() %> </br></br>
             Telefone: <%= e.getTelefone() %> </br></br>
             Website: <%= e.getWebsite() %> </br></br>
-            <input type="submit" value="remover" name="removerContato"></br></br>
+            <input type="submit" value="Remover" name="remover_cadastro"></br></br>
         </form>
         
     </body>

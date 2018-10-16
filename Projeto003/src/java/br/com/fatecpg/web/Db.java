@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Db {
     private static final ArrayList<cadastro_pessoa> pessoa = new ArrayList<>();
-     private static final ArrayList<cadastro_empresa> empresa = new ArrayList<>();
+    private static final ArrayList<cadastro_empresa> empresa = new ArrayList<>();
+    private static final ArrayList<cadastro_veiculo> veiculo = new ArrayList<>();
      
     public static ArrayList<cadastro_pessoa> getDados(){
         if (pessoa.isEmpty()){
@@ -37,5 +38,22 @@ public class Db {
             empresa.add(e3);
         }
         return empresa;
+    }
+     public static ArrayList<cadastro_veiculo> getDados_v(){
+        if (veiculo.isEmpty()){
+            cadastro_veiculo v1 = new cadastro_veiculo();
+            v1.setDados_v("VSF-0171","Ford","Ka", "preto");
+            
+            veiculo.add(v1);
+           
+            cadastro_veiculo v2 = new cadastro_veiculo();
+            v2.setDados_v("FDP-6969","Fiat","Uno", "prata");
+            veiculo.add(v2);
+            
+            cadastro_veiculo v3 = new cadastro_veiculo();
+            v3.setDados_v("PDT-1212","Toyota","Hilux", "branco");
+            veiculo.add(v3);
+        }
+        return veiculo;
     }
 }    

@@ -15,7 +15,7 @@
     </head>
     <body>
         <center>
-            <h1>Cadastros de novo contato</h1>
+            <h1>Cadastros de nova pessoa</h1>
             <%
             if(request.getParameter("novo") != null){
                 String nome = request.getParameter("nome");
