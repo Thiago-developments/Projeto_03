@@ -17,6 +17,7 @@
         <center>
             <h1>Cadastro de pessoas</h1></br><br>
             
+            <a href="home.jsp"><button>Página inicial</button></a>
             <a href="efetua_cadastro_pessoa.jsp"><button>Cadastrar nova pessoa</button></a>
             <table border="1">
                 <tr>

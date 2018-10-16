@@ -19,6 +19,10 @@
     <body>
         <center>
             <h1>Alterar cadastro</h1>
+        </center>
+    <a href="Pagina_cadastro_pessoa.jsp"><button>Voltar</button></a>
+        <center>
+            
             <% if(request.getParameter("alterar") != null){
                 String nome = request.getParameter("nome");
                 String telefone = request.getParameter("telefone");
@@ -26,7 +30,7 @@
                 String cpf = request.getParameter("cpf");
                 p.setDados(nome, cpf, email, telefone);
                 Db.getDados().set(i, p);
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("Pagina_cadastro_pessoa.jsp");
         } %>
         <form>
             Indice: <%= i+1 %></br></br>

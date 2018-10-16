@@ -18,6 +18,7 @@
     %>
     <body>
         <h1>Remoção de cadastros</h1>
+        <a href="Pagina_cadastro_pessoa.jsp"><button>Voltar</button></a>
         <% if(request.getParameter("removerContato") != null){
                 Db.getDados().remove(i);
                 response.sendRedirect("Pagina_cadastro_pessoa.jsp");
