@@ -24,21 +24,21 @@
         <center>
             
             <% if(request.getParameter("alterar") != null){
-                String nome = request.getParameter("nome");
-                String telefone = request.getParameter("telefone");
-                String email = request.getParameter("email");
-                String cpf = request.getParameter("cpf");
-                v.setDados_v(nome, cpf, email, telefone);
+                String placa = request.getParameter("placa");
+                String marca = request.getParameter("marca");
+                String modelo = request.getParameter("modelo");
+                String cor = request.getParameter("cor");
+                v.setDados_v(placa, marca, modelo, cor);
                 Db.getDados_v().set(i, v);
                 response.sendRedirect("Pagina_cadastro_veiculo.jsp");
-        } %>
+            } %>
         <form>
             Indice: <%= i+1 %></br></br>
             <input type="hidden" name="i" value="<%= i %>">
-            Placa: <input type="text" name="nome" value="<%= v.getPlaca() %>"> </br></br>
-            Marca: <input type="text" name="cpf" value="<%= v.getMarca() %>"> </br></br>
-            Modelo: <input type="telephone" name="telefone" value="<%= v.getModelo()%>"> </br></br>
-            Cor: <input type="email" name="email" value="<%= v.getCor()%>"> </br></br>
+            Placa: <input type="text" name="placa" value="<%= v.getPlaca() %>"> </br></br>
+            Marca: <input type="text" name="marca" value="<%= v.getMarca() %>"> </br></br>
+            Modelo: <input type="text" name="modelo" value="<%= v.getModelo()%>"> </br></br>
+            Cor: <input type="text" name="cor" value="<%= v.getCor()%>"> </br></br>
             <input type="submit" value="Alterar informações" name="alterar">
         </form>
         </center>

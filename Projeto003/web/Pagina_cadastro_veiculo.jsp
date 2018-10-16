@@ -36,7 +36,7 @@
                     <% int i = Db.getDados_v().indexOf(v); %>
                     <td>
                         <a href="remove_cadastro_veiculo.jsp?i=<%= i %>"><button>Remover</button></a>
-                        <a><button>Alterar</button></a>
+                        <a href="altera_cadastro_veiculo.jsp?i=<%= i %>"><button>Alterar</button></a>
                     </td>
                 </tr>
                 <%}%>
