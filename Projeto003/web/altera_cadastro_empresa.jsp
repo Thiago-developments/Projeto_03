@@ -14,7 +14,7 @@
         <title>Alterar - cadastro</title>
     </head>
     <%  int i = Integer.parseInt(request.getParameter("i")); 
-        cadastro_empresa e = Db.getDadosem().get(i); 
+        cadastro_empresa e = Db.getDadosEm().get(i); 
     %>
     <body>
         <center>
@@ -30,8 +30,8 @@
                 String telefone = request.getParameter("telefone");
                 String website = request.getParameter("website");
                 
-                e.setDadosem(nome, razao, cnpj, telefone, website );
-                Db.getDadosem().set(i, e);
+                e.setDadosEm(nome, razao, cnpj, telefone, website );
+                Db.getDadosEm().set(i, e);
                 response.sendRedirect("Pagina_cadastro_empresa.jsp");
         } %>
         <form>

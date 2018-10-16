@@ -18,7 +18,7 @@ public class cadastro_empresa {
     private String website;
    
     
-    public void setDadosem(String nome,String razao, String cnpj, String telefone,String website ){
+    public void setDadosEm(String nome,String razao, String cnpj, String telefone,String website ){
         this.setNome(nome);
         this.setRazao(razao);
         this.setCnpj(cnpj);
