@@ -27,14 +27,14 @@
                     <th>Website</th>
                     <th>Comandos</th>
                 </tr>
-                <%for (cadastro_empresa p:Db.getDadosem()) {%>
+                <%for (cadastro_empresa e:Db.getDadosem()) {%>
                 <tr>
-                    <td><%=p.getNome()%></td>
-                    <td><%=p.getRazao()%></td>
-                    <td><%=p.getCnpj()%></td>
-                    <td><%=p.getTelefone()%></td>
-                    <td><%=p.getWebsite()%></td>
-                    <% int i = Db.getDadosem().indexOf(p); %>
+                    <td><%=e.getNome()%></td>
+                    <td><%=e.getRazao()%></td>
+                    <td><%=e.getCnpj()%></td>
+                    <td><%=e.getTelefone()%></td>
+                    <td><%=e.getWebsite()%></td>
+                    <% int i = Db.getDadosem().indexOf(e); %>
                     <td>
                         <a href="remove_cadastro_empresa.jsp?i=<%= i %>"><button>Remover</button></a>
                         <a href="altera_cadastro_empresa.jsp?i=<%= i %>"><button>Alterar</button></a>
