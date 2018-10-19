@@ -42,16 +42,16 @@ public class Db {
      public static ArrayList<cadastro_veiculo> getDados_v(){
         if (veiculo.isEmpty()){
             cadastro_veiculo v1 = new cadastro_veiculo();
-            v1.setDados_v("VSF-0171","Ford","Ka", "preto");
+            v1.setDados_v("PSL-1717","Jeep","Troller", "verde");
             
             veiculo.add(v1);
            
             cadastro_veiculo v2 = new cadastro_veiculo();
-            v2.setDados_v("FDP-6969","Fiat","Uno", "prata");
+            v2.setDados_v("NEW-3030","Ford","Ka", "laranja");
             veiculo.add(v2);
             
             cadastro_veiculo v3 = new cadastro_veiculo();
-            v3.setDados_v("PDT-1212","Toyota","Hilux", "branco");
+            v3.setDados_v("PDT-1212","Chevrolet","Opala", "preto");
             veiculo.add(v3);
         }
         return veiculo;
